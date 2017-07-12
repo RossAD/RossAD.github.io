@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 940px;
+}
+.header {
+  flex-direction: row;
+}
+.photo {
+  height: 128px;
+  width: 128px;
+  float: left;
+  margin: 10px;
+  vertical-align: bottom;
+}
+.navBar {
+  display: inline;
+}
+.navBar li{
+  display: inline-block;
+}
+.navBar li::after{
+  content: '|';
+  margin: 0 0 0 10px;
+  color: black;
+}
+.navBar li:last-child:after{
+  display: none;
+}
